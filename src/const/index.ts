@@ -1,6 +1,6 @@
 import { IOptions, RecursivePartial } from 'tsparticles-engine';
 
-export const particlesOptions: RecursivePartial<IOptions> = {
+export const PARTICLES_OPTIONS: RecursivePartial<IOptions> = {
   fpsLimit: 120,
   interactivity: {
     events: {
