@@ -5,7 +5,7 @@ import type { Container, Engine } from 'tsparticles-engine';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import { PARTICLES_OPTIONS } from './const';
-import SignIn from './pages/SignIn';
+import Login from './pages/Login';
 import Home from './pages/Home';
 
 const router = createBrowserRouter([
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/signin',
-    element: <SignIn />,
+    element: <Login />,
   },
 ]);
 
@@ -32,15 +32,14 @@ function App() {
   );
 
   return (
-    <div className='w-full h-full relative'>
+    <div className='w-full h-full '>
       <Particles
-        className='z-[1] absolute'
         id='tsparticles'
         init={particlesInit}
         loaded={particlesLoaded}
         options={PARTICLES_OPTIONS}
       />
-      <div className='absolute z-[2] w-full h-full'>
+      <div className='w-full h-full'>
         <RouterProvider router={router} />
       </div>
     </div>
