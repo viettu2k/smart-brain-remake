@@ -15,7 +15,7 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className='z-10 h-full w-full flex items-center justify-center'>
+    <div className='h-full w-full flex items-center justify-center'>
       <div className='rounded-md min-w-[400px] min-h-[400px] border border-slate-400 shadow-md p-4'>
         <h1 className='text-black font-bold text-[60px] text-center font-mono'>
           {isLogging ? 'Login' : 'Register'}
