@@ -44,20 +44,33 @@ const Login: React.FC = () => {
             />
           </div>
           {!isLogging && (
-            <div className='flex items-center justify-center flex-col mt-6'>
-              <label
-                className='font-bold text-xl text-black'
-                htmlFor='password'
-              >
-                Password Confirm
-              </label>
-              <input
-                className='border-double min-h-[2rem] bg-transparent focus:bg-black focus:text-white border-white border-2 rounded-sm px-2'
-                id='passwordConfirm'
-                name='passwordConfirm'
-                type='password'
-              />
-            </div>
+            <>
+              <div className='flex items-center justify-center flex-col mt-6'>
+                <label
+                  className='font-bold text-xl text-black'
+                  htmlFor='passwordConfirm'
+                >
+                  Password Confirm
+                </label>
+                <input
+                  className='border-double min-h-[2rem] bg-transparent focus:bg-black focus:text-white border-white border-2 rounded-sm px-2'
+                  id='passwordConfirm'
+                  name='passwordConfirm'
+                  type='password'
+                />
+              </div>
+              <div className='flex items-center justify-center flex-col mt-6'>
+                <label className='font-bold text-xl text-black' htmlFor='name'>
+                  Password Confirm
+                </label>
+                <input
+                  className='border-double min-h-[2rem] bg-transparent focus:bg-black focus:text-white border-white border-2 rounded-sm px-2'
+                  id='name'
+                  name='name'
+                  type='text'
+                />
+              </div>
+            </>
           )}
           <div className='flex justify-center mt-6'>
             <button
