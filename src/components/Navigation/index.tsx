@@ -6,10 +6,10 @@ const Navigation: React.FC<{ isSignedIn: boolean }> = ({ isSignedIn }) => {
 
   if (isSignedIn) {
     return (
-      <nav style={{ display: 'flex', justifyContent: 'flex-end' }}>
+      <nav className='flex justify-end'>
         <p
           onClick={() => navigate('signout')}
-          className='f3 link dim black underline pa3 pointer'
+          className='text-lg text-black underline p-3 cursor-pointer'
         >
           Sign Out
         </p>
@@ -17,16 +17,16 @@ const Navigation: React.FC<{ isSignedIn: boolean }> = ({ isSignedIn }) => {
     );
   } else {
     return (
-      <nav style={{ display: 'flex', justifyContent: 'flex-end' }}>
+      <nav className='flex justify-end'>
         <p
           onClick={() => navigate('signin')}
-          className='f3 link dim black underline pa3 pointer'
+          className='text-lg text-black underline p-3 cursor-pointer'
         >
           Sign In
         </p>
         <p
           onClick={() => navigate('register')}
-          className='f3 link dim black underline pa3 pointer'
+          className='text-lg text-black underline p-3 cursor-pointer'
         >
           Register
         </p>
@@ -34,4 +34,5 @@ const Navigation: React.FC<{ isSignedIn: boolean }> = ({ isSignedIn }) => {
     );
   }
 };
+
 export default Navigation;
