@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ImageLinkForm: React.FC<{
-  onInputChange: (e: React.ChangeEvent) => void;
+  onInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onButtonSubmit: () => void;
 }> = ({ onInputChange, onButtonSubmit }) => (
   <div>
